@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap");
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 300;
+  src: url("../fonts/Bitter-Light.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 400;
+  src: url("../fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 500;
+  src: url("../fonts/Bitter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Consola";
+  font-weight: 400;
+  src: url("../fonts/consola.ttf");
+}
+
+@font-face {
+  font-family: "All Always";
+  font-weight: 400;
+  src: url("../fonts/SVN-All\ Always.otf");
+}
+
+@font-face {
+  font-family: "La Paloma";
+  font-weight: 400;
+  src: url("../fonts/SVN-La\ Paloma.otf");
+}
+
+html,
+body {
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  .f-bitter {
+    font-family: "Bitter";
+  }
+
+  .f-consola {
+    font-family: "Consola";
+  }
+
+  .f-always {
+    font-family: "All Always";
+  }
+
+  .f-paloma {
+    font-family: "La Paloma";
+  }
+
+  /* === Reset Default Style === */
+
+  p {
+    margin-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: 0.75em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: all ease-in 100ms;
+
+    &:hover {
+      transition: all ease-out 150ms;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* === Font Weight Classes === */
+
+  .bold,
+  strong,
+  b {
+    font-weight: 700;
+  }
+
+  .highlight {
+    font-size: 1.25em;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  /* === Text Alignment Classes === */
+
+  .txt-center,
+  .text-centeer {
+    text-align: center;
+  }
+
+  .txt-right,
+  .text-right {
+    text-align: right;
+  }
+
+  /* === Text Color Classes === */
+}
+
+/* === BCM THEMES TYPOGRAPHY ELEMENTS === */
+html,
+body {
+  /* === DESKTOP RESPONSIVE === */
+  @media #{$information-sm-laptop} {
+  }
+  /* === DESKTOP RESPONSIVE - END === */
+
+  /* === MOBILE RESPONSIVE === */
+  @media #{$information-lg-tablet} {
+  }
+
+  @media #{$information-tablet} {
+  }
+
+  @media #{$information-phone} {
+  }
+
+  @media #{$information-sm-phone} {
+  }
+  /* === MOBILE RESPONSIVE - END === */
+}

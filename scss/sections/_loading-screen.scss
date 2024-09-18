@@ -1,0 +1,154 @@
+// Loading Screen
+.loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #f5f9ee;
+  overflow: hidden;
+  // display: none;
+
+  // Primary Name Block
+  .primary-name-block {
+    color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+
+    .name-block {
+      font-size: 38px;
+    }
+
+    .branch-logo {
+      width: 54px;
+      margin: 0 15px;
+      transform-origin: bottom right;
+      animation: branch-moving infinite 2s linear;
+    }
+  }
+
+  // Quote Logo
+  .quote-logo {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: $green;
+    bottom: 0;
+    padding-bottom: 30px;
+    font-size: 12px;
+    letter-spacing: 0.025em;
+
+    // Quote Block
+    .quote-block {
+      // Quote
+      .quote {
+        margin: 0 0 0.25em;
+        line-height: 1.45;
+
+        &.big-dot {
+          line-height: 1;
+        }
+      }
+    }
+
+    .cross-el {
+      width: 15px;
+      height: 24px;
+      margin: auto;
+      position: relative;
+      margin-top: 10px;
+
+      .horizontal-line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $green;
+        top: 8px;
+      }
+
+      .vertical-line {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 7px;
+        top: 0;
+        background-color: $green;
+      }
+    }
+  }
+}
+
+// Opening Screen
+.opening-scene {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  // display: none;
+
+  .left-opening,
+  .right-opening {
+    width: calc(50% + 1px);
+    height: 100%;
+    position: absolute;
+    background-color: #f5f9ee;
+  }
+
+  .left-opening {
+    left: 0;
+    padding: 0 0 0 calc(50% - 420px);
+    transform-origin: left center;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-opening {
+    right: 0;
+    padding: 0 calc(50% - 420px) 0 0;
+    transform-origin: right center;
+    display: flex;
+    align-items: center;
+  }
+
+  @media #{$information-sm-laptop}{
+    .left-opening {
+      left: 0;
+      padding: 0 0 0 calc(50% - 360px);
+      transform-origin: left center;
+    }
+  
+    .right-opening {
+      right: 0;
+      padding: 0 calc(50% - 360px) 0 0;
+      transform-origin: right center;
+    }
+  }
+
+  @media #{$information-tablet}{
+    .left-opening {
+      left: 0;
+      padding: 4vw 0 4vw 4vw;
+      transform-origin: left center;
+      display: flex;
+      align-items: center;
+    }
+  
+    .right-opening {
+      right: 0;
+      padding: 4vw 4vw 4vw 0;
+      transform-origin: right center;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

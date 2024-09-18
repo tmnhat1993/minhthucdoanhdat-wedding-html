@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  // Common
+  * {
+    box-sizing: border-box;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  // Image Holder
+  .img-holder {
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &.bg-mode {
+      overflow: hidden;
+
+      img,
+      picture {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  // Video
+  video {
+    display: block;
+    max-width: 100%;
+
+    &[poster] {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* === RESPONSIVE DESKTOP === */
+  @media #{$information-sm-screen} {
+  }
+
+  @media #{$information-sm-laptop} {
+  }
+  /* === RESPONSIVE DESKTOP - END === */
+
+  /* === MOBILE RESPONSIVE === */
+  @media #{$information-lg-tablet} {
+  }
+
+  @media #{$information-tablet} {
+  }
+
+  @media #{$information-phone} {
+  }
+
+  @media #{$information-sm-phone} {
+  }
+  /* === MOBILE RESPONSIVE - END === */
+}

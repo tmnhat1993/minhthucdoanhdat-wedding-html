@@ -1,0 +1,21 @@
+.mb-hide {
+  @media #{$information-lg-tablet} {
+    display: none !important;
+  }
+}
+
+.mb-show {
+  display: none !important;
+
+  @media #{$information-lg-tablet} {
+    display: block !important;
+
+    &.row {
+      display: flex !important;
+    }
+
+    &.inline {
+      display: inline !important;
+    }
+  }
+}

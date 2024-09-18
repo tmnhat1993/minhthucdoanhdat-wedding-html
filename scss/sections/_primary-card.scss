@@ -1,0 +1,1215 @@
+#thuc-dat-wedding-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $green;
+  background-size: 100% auto;
+  background-repeat: repeat;
+
+  &.is-loading {
+    overflow: hidden;
+  }
+
+  // Container
+  .container {
+    width: 1200px;
+    max-width: 100%;
+    position: relative;
+  }
+
+  // Section Divider
+  .section-divider {
+    width: 240px;
+    margin: 20px auto;
+  }
+
+  // Section Invite Banner
+  .section-invite-banner {
+    height: 680px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .primary-illustration {
+      position: absolute;
+      width: 480px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .bride-groom-img {
+        transform: translateX(-240px);
+      }
+    }
+
+    .banner-content {
+      width: 50%;
+      margin-left: auto;
+      padding-left: 20px;
+
+      // Page Title
+      .page-title {
+        font-size: 18px;
+        letter-spacing: 4px;
+        font-weight: 300;
+        margin-bottom: 0.5em;
+      }
+
+      .page-prime-title {
+        font-size: 32px;
+        letter-spacing: 4px;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 0;
+      }
+
+      .dot {
+        margin: 0.25em 0;
+        font-size: 20px;
+      }
+
+      .date-detail {
+        line-height: 1.4;
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: 4px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  // Primary Detail
+  .section-primary-detail {
+    margin-bottom: 50px;
+
+    // Illustration Row
+    .illustration-row {
+      display: flex;
+      width: 980px;
+      margin: 40px auto 20px;
+
+      // Left Col
+      .illustration-left,
+      .illustration-right {
+        text-align: center;
+        flex-basis: 50%;
+
+        .parents-pic {
+          width: 320px;
+          margin-bottom: 20px;
+          margin: 0 auto;
+        }
+
+        .parents-name {
+          font-size: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .and-sign {
+            font-size: 54px;
+            color: $light-green;
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+
+    // House Detail
+    .house-detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+
+      .house-col {
+        flex-basis: 45%;
+        flex-shrink: 0;
+        text-align: center;
+
+        .house-nickname {
+          letter-spacing: 4px;
+          font-size: 20px;
+          font-weight: 300;
+        }
+
+        .house-name {
+          font-size: 72px;
+          letter-spacing: 8px;
+          font-weight: 300;
+        }
+      }
+
+      .ring-holder-col {
+        flex-grow: 1;
+
+        .ring-img {
+          width: 60px;
+          margin: auto;
+          position: relative;
+          top: 10px;
+        }
+      }
+    }
+
+    // Sincerely Announce
+    .sincerely-announce {
+      letter-spacing: 4px;
+      line-height: 1.4;
+      font-size: 20px;
+      // font-weight: 300;
+    }
+
+    // Label Row
+    .label-row {
+      letter-spacing: 4px;
+      font-size: 22px;
+      font-weight: 300;
+
+      .dot {
+        font-size: 24px;
+        margin: 0 14px;
+      }
+    }
+
+    // Event Detail
+    .event-detail {
+      margin-top: 40px;
+
+      // Detail Item
+      .detail-item {
+        margin-bottom: 20px;
+
+        .detail-ico {
+          width: 24px;
+          margin-bottom: 15px;
+          margin: 0 auto 5px;
+
+          &.church-ico {
+            width: 34px;
+          }
+        }
+
+        // Detail Context
+        .detail-context {
+          line-height: 1.5;
+          font-size: 20px;
+          font-weight: 300;
+
+          b {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  // Invitation Form
+  .section-invitation-form {
+    padding-top: 30px;
+
+    // Label Row
+    .invite-label-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // Dear Guest
+      .dear-guest {
+        font-size: 34px;
+        margin-right: 5px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      // Guest Name Holder
+      .guest-name-holder {
+        position: relative;
+
+        .guest-name {
+          position: relative;
+          font-size: 34px;
+          z-index: 2;
+          font-weight: 600;
+          padding-left: 5px;
+          margin-bottom: 10px;
+        }
+
+        .guest-name-bg {
+          width: 180px;
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+      }
+    }
+
+    // Dear Label
+    .dear-label {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 4px;
+    }
+
+    // Restaurant Detail
+    .restaurant-detail {
+      margin-top: 40px;
+
+      // Name Holder
+      .restaurant-name-holder {
+        width: 540px;
+        margin: 0 auto 40px;
+
+        // Label
+        .label {
+          color: $light-green;
+          letter-spacing: 4px;
+          font-size: 24px;
+          font-weight: 300;
+        }
+
+        .restaurant-img {
+          width: 400px;
+        }
+      }
+
+      // Address
+      .restaurant-address {
+        width: 480px;
+        margin: auto;
+
+        // Address Item
+        .address-item {
+          display: flex;
+          margin-bottom: 18px;
+          font-weight: 300;
+
+          b {
+            font-weight: 500;
+          }
+
+          .sm-txt {
+            font-size: 14px;
+          }
+
+          // Icon
+          .ico {
+            width: 20px;
+            margin-right: 20px;
+
+            &.time-ico {
+              width: 25px;
+              margin-right: 15px;
+            }
+
+            &.calendar-ico {
+              width: 25px;
+              margin-right: 15px;
+            }
+          }
+
+          // Item Detail
+          .item-detail {
+            line-height: 1.4;
+            font-size: 18px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .main-form-holder {
+      width: 880px;
+      margin: 40px auto;
+      position: relative;
+
+      .guest-form {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 50px 40px 0;
+
+        .form-title {
+          font-weight: 300;
+          font-size: 24px;
+          letter-spacing: 1px;
+        }
+
+        .form-row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 0;
+
+          .radio-holder {
+            margin: 0 12px;
+          }
+        }
+
+        .text-area-holder {
+          padding: 0 20px;
+
+          .text-label {
+            font-size: 48px;
+            margin-bottom: 0;
+            line-height: 1;
+          }
+
+          .textarea-notes {
+            resize: none;
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            resize: none;
+            font-size: 22px;
+            color: $green;
+            padding: 10px;
+            outline: none;
+
+            line-height: 36px;
+            background-image: -webkit-linear-gradient(
+                left,
+                #ffffff00 0,
+                transparent 0
+              ),
+              -webkit-linear-gradient(right, #ffffff00 0, transparent 0),
+              -webkit-linear-gradient(#ffffff00 35px, #ccc 35px, #ccc 36px, #ffffff00
+                    36px);
+            background-repeat: repeat-y;
+            background-size: 100% 100%, 100% 100%, 100% 36px;
+            background-attachment: local;
+          }
+        }
+      }
+
+      .submit-btn {
+        .submit-btn {
+          border: none;
+          font-size: 28px;
+          margin: auto;
+          display: block;
+          width: 160px;
+          background-color: transparent;
+          letter-spacing: 1px;
+          transition: all ease-out 300ms;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .thankyou-note{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        &.active{
+          display: flex;
+        }
+
+        .thank-you-txt{
+          line-height: 2;
+          font-size: 60px;
+          margin: 0;
+        }
+      }
+    }
+
+    .form-footer {
+      font-size: 18px;
+      letter-spacing: 2px;
+      padding-bottom: 40px;
+    }
+  }
+
+  // laptop
+  @media #{$information-sm-laptop} {
+    // Section Divider
+    .section-divider {
+      width: 200px;
+      margin: 18px auto;
+    }
+
+    // Section Invite Banner
+    .section-invite-banner {
+      height: 600px;
+
+      .primary-illustration {
+        width: 400px;
+
+        .bride-groom-img {
+          transform: translateX(-200px);
+        }
+      }
+
+      .banner-content {
+        padding-left: 18px;
+
+        // Page Title
+        .page-title {
+          font-size: 16px;
+          letter-spacing: 4px;
+        }
+
+        .page-prime-title {
+          font-size: 28px;
+          letter-spacing: 4px;
+        }
+
+        .dot {
+          margin: 0.25em 0;
+          font-size: 18px;
+        }
+
+        .date-detail {
+          line-height: 1.4;
+          margin: 0;
+          font-size: 24px;
+          letter-spacing: 4px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    // Primary Detail
+    .section-primary-detail {
+      margin-bottom: 40px;
+
+      // Illustration Row
+      .illustration-row {
+        width: 920px;
+        margin: 36px auto 18px;
+
+        // Left Col
+        .illustration-left,
+        .illustration-right {
+          .parents-pic {
+            width: 290px;
+            margin-bottom: 18px;
+            margin: 0 auto;
+          }
+
+          .parents-name {
+            font-size: 38px;
+
+            .and-sign {
+              font-size: 48px;
+              margin: 0 7px;
+            }
+          }
+        }
+      }
+
+      // House Detail
+      .house-detail {
+        padding: 36px 0;
+
+        .house-col {
+          .house-nickname {
+            letter-spacing: 4px;
+            font-size: 18px;
+          }
+
+          .house-name {
+            font-size: 64px;
+            letter-spacing: 6px;
+          }
+        }
+
+        .ring-holder-col {
+          .ring-img {
+            width: 50px;
+            top: 9px;
+          }
+        }
+      }
+
+      // Sincerely Announce
+      .sincerely-announce {
+        font-size: 18px;
+      }
+
+      // Label Row
+      .label-row {
+        font-size: 20px;
+
+        .dot {
+          font-size: 22px;
+          margin: 0 12px;
+        }
+      }
+
+      // Event Detail
+      .event-detail {
+        margin-top: 36px;
+
+        // Detail Item
+        .detail-item {
+          margin-bottom: 18px;
+
+          .detail-ico {
+            width: 22px;
+            margin-bottom: 13px;
+            margin: 0 auto 5px;
+
+            &.church-ico {
+              width: 31px;
+            }
+          }
+
+          // Detail Context
+          .detail-context {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    // Invitation Form
+    .section-invitation-form {
+      padding-top: 27px;
+
+      // Label Row
+      .invite-label-row {
+        // Dear Guest
+        .dear-guest {
+          font-size: 31px;
+          margin-right: 5px;
+          margin-bottom: 9px;
+        }
+
+        // Guest Name Holder
+        .guest-name-holder {
+          .guest-name {
+            font-size: 31px;
+            z-index: 2;
+            padding-left: 5px;
+            margin-bottom: 8px;
+          }
+
+          .guest-name-bg {
+            width: 164px;
+            top: 5px;
+          }
+        }
+      }
+
+      // Dear Label
+      .dear-label {
+        font-size: 18px;
+        letter-spacing: 4px;
+      }
+
+      // Restaurant Detail
+      .restaurant-detail {
+        margin-top: 36px;
+
+        // Name Holder
+        .restaurant-name-holder {
+          width: 480px;
+          margin: 0 auto 36px;
+
+          // Label
+          .label {
+            letter-spacing: 4px;
+            font-size: 22px;
+          }
+
+          .restaurant-img {
+            width: 360px;
+          }
+        }
+
+        // Address
+        .restaurant-address {
+          width: 440px;
+
+          // Address Item
+          .address-item {
+            margin-bottom: 16px;
+
+            .sm-txt {
+              font-size: 13px;
+            }
+
+            // Icon
+            .ico {
+              width: 18px;
+              margin-right: 18px;
+
+              &.time-ico {
+                width: 20px;
+                margin-right: 11px;
+              }
+
+              &.calendar-ico {
+                width: 22px;
+                margin-right: 13px;
+              }
+            }
+
+            // Item Detail
+            .item-detail {
+              font-size: 16px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+
+      .main-form-holder {
+        width: 800px;
+        margin: 36px auto;
+
+        .guest-form {
+          padding: 45px 36px 0;
+
+          .form-title {
+            font-size: 22px;
+          }
+
+          .form-row {
+            padding: 9px 0;
+
+            .radio-holder {
+              margin: 0 11px;
+            }
+          }
+
+          .text-area-holder {
+            padding: 0 18px;
+
+            .text-label {
+              font-size: 40px;
+            }
+
+            .textarea-notes {
+              font-size: 20px;
+              padding: 9px;
+
+              line-height: 33px;
+              background-image: -webkit-linear-gradient(
+                  left,
+                  #ffffff00 0,
+                  transparent 0
+                ),
+                -webkit-linear-gradient(right, #ffffff00 0, transparent 0),
+                -webkit-linear-gradient(#ffffff00 32px, #ccc 32px, #ccc 33px, #ffffff00
+                      33px);
+              background-repeat: repeat-y;
+              background-size: 100% 100%, 100% 100%, 100% 33px;
+            }
+          }
+        }
+
+        .submit-btn {
+          .submit-btn {
+            font-size: 24px;
+            width: 130px;
+            height: 36px;
+          }
+        }
+
+        .thankyou-note{
+          padding: 36px;
+  
+          .thank-you-txt{
+            line-height: 2;
+            font-size: 54px;
+            margin: 0;
+          }
+        }
+      }
+
+      // Form Footer
+      .form-footer {
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding-bottom: 36px;
+      }
+    }
+  }
+
+  // mobile
+  @media #{$information-tablet} {
+    // Container
+    .container {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    // Section Divider
+    .section-divider {
+      width: 50vw;
+      margin: 8vw auto;
+    }
+
+    // Section Invite Banner
+    .section-invite-banner {
+      height: auto;
+      padding: 0 4.2vw;
+
+      // Primary Illutstration
+      .primary-illustration {
+        position: static;
+        width: 55%;
+        transform: none;
+        margin: 0 auto 8vw;
+
+        .bride-groom-img {
+          transform: none;
+        }
+      }
+
+      .banner-content {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+
+        // Page Title
+        .page-title {
+          font-size: 5.4vw;
+          letter-spacing: 0.05em;
+        }
+
+        .page-prime-title {
+          font-size: 6.25vw;
+          letter-spacing: 0.025em;
+        }
+
+        .dot {
+          margin: 0.25em 0;
+          font-size: 4.8vw;
+        }
+
+        .date-detail {
+          line-height: 1.4;
+          margin: 0;
+          font-size: 4.8vw;
+        }
+      }
+    }
+
+    // Primary Detail
+    .section-primary-detail {
+      margin-bottom: 50px;
+
+      // Illustration Row
+      .illustration-row {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 6vw auto 4vw;
+        justify-content: center;
+
+        // Left Col
+        .illustration-left,
+        .illustration-right {
+          text-align: center;
+          flex-basis: 60%;
+          margin-bottom: 8vw;
+
+          .parents-pic {
+            width: 100%;
+            margin-bottom: 0;
+          }
+
+          .parents-name {
+            font-size: 6.4vw;
+
+            .and-sign {
+              font-size: 8vw;
+              margin: 0 1vw;
+            }
+          }
+        }
+      }
+
+      // House Detail
+      .house-detail {
+        padding: 6.4vw 0;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .house-col {
+          flex-basis: 100%;
+
+          .house-nickname {
+            letter-spacing: 0.25em;
+            font-size: 4vw;
+          }
+
+          .house-name {
+            font-size: 10vw;
+            letter-spacing: 0.25em;
+          }
+        }
+
+        .ring-holder-col {
+          flex-grow: 1;
+          flex-basis: 100%;
+          margin: 4.8vw 0 6vw;
+
+          .ring-img {
+            width: 12vw;
+            top: 0;
+          }
+        }
+      }
+
+      // Sincerely Announce
+      .sincerely-announce {
+        letter-spacing: 0.05em;
+        font-size: 3.2vw;
+      }
+
+      // Label Row
+      .label-row {
+        letter-spacing: 0.025em;
+        font-size: 3.6vw;
+
+        .dot {
+          font-size: 4.2vw;
+          margin: 0 3vw;
+        }
+      }
+
+      // Event Detail
+      .event-detail {
+        margin-top: 6.4vw;
+
+        // Detail Item
+        .detail-item {
+          margin-bottom: 4.2vw;
+
+          .detail-ico {
+            width: 5.4vw;
+            margin-bottom: 2vw;
+            margin: 0 auto 2vw;
+
+            &.church-ico {
+              width: 7.8vw;
+            }
+          }
+
+          // Detail Context
+          .detail-context {
+            font-size: 3.2vw;
+          }
+        }
+      }
+    }
+
+    // Invitation Form
+    .section-invitation-form {
+      padding-top: 2vw;
+
+      // Label Row
+      .invite-label-row {
+        // Dear Guest
+        .dear-guest {
+          font-size: 4.8vw;
+          margin-right: 1vw;
+          margin-bottom: 3vw;
+        }
+
+        // Guest Name Holder
+        .guest-name-holder {
+          .guest-name {
+            font-size: 5.4vw;
+            padding-left: 1vw;
+            margin-bottom: 3vw;
+          }
+
+          .guest-name-bg {
+            width: 28vw;
+            top: 1vw;
+          }
+        }
+      }
+
+      // Dear Label
+      .dear-label {
+        font-size: 3.2vw;
+        letter-spacing: 0.025em;
+      }
+
+      // Restaurant Detail
+      .restaurant-detail {
+        margin-top: 8vw;
+
+        // Name Holder
+        .restaurant-name-holder {
+          width: 100%;
+          padding: 0 4.8vw;
+          margin: 0 auto 8vw;
+
+          // Label
+          .label {
+            letter-spacing: 0.025em;
+            font-size: 4.2vw;
+          }
+
+          .restaurant-img {
+            width: 70%;
+          }
+        }
+
+        // Address
+        .restaurant-address {
+          width: 100%;
+          padding: 0 4.8vw;
+
+          // Address Item
+          .address-item {
+            margin-bottom: 5.4vw;
+
+            .sm-txt {
+              font-size: 2.8vw;
+            }
+
+            // Icon
+            .ico {
+              width: 4vw;
+              margin-right: 4vw;
+
+              &.time-ico {
+                width: 4.5vw;
+                margin-right: 3.5vw;
+              }
+
+              &.calendar-ico {
+                width: 4.5vw;
+                margin-right: 3.5vw;
+              }
+            }
+
+            // Item Detail
+            .item-detail {
+              line-height: 1.4;
+              font-size: 3.2vw;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+
+      .main-form-holder {
+        width: 100%;
+        margin: 8vw auto;
+        position: relative;
+
+        .form-border {
+          display: none;
+        }
+
+        .guest-form {
+          position: relative;
+          padding: 6vw 4.8vw 0;
+
+          .form-title {
+            font-size: 3.4vw;
+            letter-spacing: 1px;
+          }
+
+          .form-row {
+            padding: 3vw 0;
+
+            .radio-holder {
+              margin: 0 3vw;
+            }
+          }
+
+          .text-area-holder {
+            padding: 0 4.8vw;
+
+            .text-label {
+              font-size: 7.2vw;
+            }
+
+            .textarea-notes {
+              font-size: 22px;
+              color: $green;
+              padding: 10px;
+              outline: none;
+              line-height: 36px;
+              background-image: -webkit-linear-gradient(
+                  left,
+                  #ffffff00 0,
+                  transparent 0
+                ),
+                -webkit-linear-gradient(right, #ffffff00 0, transparent 0),
+                -webkit-linear-gradient(#ffffff00 35px, #ccc 35px, #ccc 36px, #ffffff00
+                      36px);
+              background-repeat: repeat-y;
+              background-size: 100% 100%, 100% 100%, 100% 36px;
+              background-attachment: local;
+            }
+          }
+        }
+
+        .thankyou-note{
+          padding: 0 8vw;
+  
+          .thank-you-txt{
+            font-size: 7.2vw;
+          }
+        }
+
+        .submit-btn {
+          .submit-btn {
+            width: 24vw;
+          }
+        }
+      }
+
+      .form-footer {
+        font-size: 3.2vw;
+        padding: 4vw 4.8vw;
+        letter-spacing: 2px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@keyframes branch-moving {
+  0%,
+  50% {
+    transform: none;
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes wave-spread {
+  0%,
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+
+  99% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* The container */
+.radio-holder {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    & ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    &:checked ~ .checkmark {
+      background-color: $green;
+
+      :after {
+        display: block;
+      }
+    }
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background-color: $light-green;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}
+
+.loader-holder{
+  position: absolute;
+  bottom: -24px;
+  left: (calc(50% - 24px));
+  z-index: 2;
+  display: none;
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid $green;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  }
+  .loader:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid $green;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+}
+
+
+
+@keyframes scaleUp {
+  0% { transform: translate(-50%, -50%) scale(0) }
+  60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+}
+@keyframes pulse {
+  0% , 60% , 100%{ transform:  scale(1) }
+  80% { transform:  scale(1.2)}
+}
